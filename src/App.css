@@ -1,38 +1,548 @@
-.App {
-  text-align: center;
+
+.social-icons{
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.facebook-icon {
+  color: #3b5998;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.instagram-icon{
+  color: 	#FCAF45;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.twitter-icon{
+  color: #00acee;
+}
+
+.linkedIn-icon{
+  color: #0072b1 ;
+}
+/* endOriginalIconColors */
+
+/* iconNewColoredWhenScolled */
+.facebook-icon.scrolled, .instagram-icon.scrolled, .twitter-icon.scrolled, .linkedIn-icon.scrolled {
+  color: #ffffff;
+}
+
+
+/* Profile begin */
+
+/* profileBackground */
+#profile-section{
+  background-color: rgba(15, 88, 75, 0.35);
+  mix-blend-mode: multiply;
+  margin: 5rem 0 0 0;
+}
+
+
+/* .dark-mode .curve-line {
+  position: absolute;
+  bottom: -1px; 
+  left: 0;
+  right: 0;
+  height: 100px; 
+  background-color: #0a367630;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  z-index: 1; 
+} */
+
+
+
+.box {
+
+  height: 60vmin;
+  /* border: 1px dashed rgba(255,255,255,0.4); */
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    /* top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+    border-radius: 50%;
+    border: 1px dashed rgba(255,255,255,0.4);
+    transform: scale(1.42);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.spin-container {
+  width: 100%;
+  height: 100%;
+  animation: spin 12s ease-in-out infinite alternate;
+  position: relative;
+  margin: 2.5rem 0 0;
+}
+
+.shape {
+  width: 100%;
+  height: 100%;
+  transition: border-radius 1s ease-out;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite both alternate;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.bd {
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  left: -21%;
+  top: -21%;
+  background: url(../src/assets/image/regine-about-1.png);
+  background-size: 100%;
+  background-position: center center;
   display: flex;
-  flex-direction: column;
+  color: #003;
+  font-size: 5vw;
+  font-weight: bold;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  text-transform: uppercase;
+  animation: spin 12s ease-in-out infinite alternate-reverse;
+  opacity: 1;
+  z-index: 2;
+}
+
+@keyframes morph {
+  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
+  100% {border-radius: 40% 60%;} 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+/* BrandName */
+.brand-name{
+  font-size: 2rem!important;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #093224;
+
+}
+/* nav-items */
+.nav-title{
+  font-size: 1.3rem!important;
+  font-weight: 400;
+}
+
+/* originalIconColors */
+
+.social-icons{
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.facebook-icon {
+  color: #3b5998;
+}
+
+.instagram-icon{
+  color: 	#FCAF45;
+}
+
+.twitter-icon{
+  color: #00acee;
+}
+
+.linkedIn-icon{
+  color: #0072b1 ;
+}
+/* endOriginalIconColors */
+
+/* iconNewColoredWhenScolled */
+.facebook-icon.scrolled {
+  color: #ffffff;
+}
+.instagram-icon.scrolled {
+  color: 	#ffffff;
+}
+
+.twitter-icon.scrolled {
+  color: #ffffff;
+}
+
+.linkedIn-icon.scrolled {
+  color: #ffffff;
+}
+/*End */
+
+
+
+/* CURSOR */
+/* ABOUT ME */
+.link{
+  cursor: pointer;
+}
+
+.nav-title{
+  cursor: pointer;
+}
+
+
+/* profileContent */
+/* typewriterEffect */
+.animated-job-title{
+  color:rgba(4, 45, 36, 0.68) ;
+  font-weight: bolder;
+  font-size:4rem;
+}
+
+/* mainContainerForProfileContent */
+.profile-content{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+/*paragraphDescription */
+.home-p, .about-p{
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+
+/* myName */
+.name-content{
+  color: #4BAF9D;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* yourWord */
+/* Hi */
+.greeting {
+  color:#0F584B;
+}
+
+
+.btn-primary{
+  background-color: #4BAF9D!important;
+  border: none!important;
+}
+.btn-secondary{
+  background-color:#0B2C43!important;
+  margin: 0 2rem 0 2rem;
+}
+
+.button-container{
+ margin: 2.5rem 0 0 0;
+}
+
+
+
+
+
+/* ABOUT */
+/* img for about home */
+.about-img{
+  width: 100%;
+  height:100%
+}
+
+/*aboutBackground */
+#about-me-container{
+  background-color: rgba(128, 13, 13, 0.04);
+  /* margin: 5rem 0 0; */
+}
+.about-content{
+  padding-top: 3rem; /* Adjust this value to increase/decrease the left padding */
+  padding-bottom: 3rem; /* Adjust this value to increase/decrease the right padding */
+}
+
+.bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #4BAF9D;
+  margin-right: 10px;
+  position: relative;
+}
+
+.bullet::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  width: 20px;
+  height: 2px;
+  background-color: #AF9E58;
+  transform: translateY(-50%);
+}
+
+.award-text {
+  display: inline;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+
+/* contactBackground */
+#contact-section{
+  background-color: rgba(128, 13, 13, 0.04);
+  margin: 5rem 0 0 0;
+}
+
+/* SERVICES */
+/* servicesBackground */
+/* #services-container{
+  background-color: rgba(45, 88, 81, 0.35);
+} */
+
+.services-icon{
+  color: #FF9A9A;
+  width: 2em!important;
+  height: 2em!important;
+}
+
+.card{
+  background-color: #0F584B!important;
+}
+.card-title{
+  color: whitesmoke!important;
+  padding: 1.2rem 0 0 0;
+  font-size: 2rem;
+}
+.card-text{
+  color: #C4C4C4!important;
+  font-size: 1.2rem;
+}
+
+.card-body{
+  padding: 2em!important;
+}
+
+.description-page{
+  color:#0F584B;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* END *
+
+/* Rest of your CSS code */
+
+
+/* PORTFOLIO */
+.portfolio-title{
+  float: right;
+  margin-bottom: 1rem;
+}
+
+.portfolio-nav-items{
+  font-size: 1.3rem!important;
+  /* margin: 2rem 0 0 0; */
+  transition: background-color 0.3s;
+  padding: 0 2rem 0 2rem;
+ 
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem;
+  color: black;
+}
+
+
+.portfolio-nav-items:hover {
+  background-color: #4BAF9D; 
+  border-radius: 3rem;
+  color: #FFFFFF!important;
+
+}
+
+
+.content-container {
+  width: 100%;
+  height: 100vh; /* Adjust the desired height for the content container */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.8;
+}
+
+.content-container.slide-left {
+  transform: translateX(-100%);
+}
+
+.web-design-content {
+  overflow: hidden;
+  position: relative;
+}
+
+.animate-slide .carousel-item {
+  animation: slideToLeft 0.5s forwards;
+}
+
+@keyframes slideToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* FOOTER */
+.footer-border {
+  height: 1px;
+  background-color: #4BAF9D; /* Replace with your desired color */
+}
+
+/* to distance the icon from social media icons */
+.custom-icon{
+  margin-left: 3rem;
+}
+
+
+
+
+
+/* CONTACT */
+.contact-title h3{
+  display:flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  padding: 1rem 0 1.4rem 0;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white!important;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.input:focus + .underline {
+  transform: scaleX(1);
+}
+
+label {
+  display: inline-block;
+  margin: 1.7rem 0 0 0;
+  color: #093224;
+  font-size: 1.3rem;
+}
+/* END */
+
+
+/* SKILL */
+.progress-bar-wrapper {
+  position: relative;
+  margin: 0.7rem 0 1.5rem 0;
+}
+
+.progress {
+  background: #AF9E58!important;
+}
+
+.progress-bar {
+  background: #0B2C43!important;
+  position: relative!important;
+  transition: width 0.5s ease;
+}
+
+.progress-bar-circle {
+  position: absolute;
+  transform: translate(50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #0B2C43;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: -.5rem;
   color: white;
 }
+/* END */
 
-.App-link {
-  color: #61dafb;
+
+/* PortfolioNavbar.css */
+
+/* CSS for active navigation link */
+.portfolio-nav-items.active {
+  /* Add your desired styles for the active navigation link here */
+  /* For example: */
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* CSS for the carousel wrapper */
+.carousel-wrapper {
+  /* Add your desired styles for the carousel wrapper here */
+  /* For example: */
+  margin-top: 20px;
+  padding: 20px;
+  /* background-color: #f5f5f5; */
+  transition: opacity 0.5s ease-in-out;
 }
+.carousel-wrapper.fade-in {
+  opacity: 1;
+}
+
+/* CSS for Web Design Content */
+.web-design-content {
+  /* Add your desired styles for web design content here */
+  /* For example: */
+  color: #093224;
+  font-size: 18px;
+}
+
+/* CSS for Graphic Design Content */
+
+.img-overlay {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.img-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust the color and opacity as needed */
+}
+
+.img-design {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Profile.css */
+
+.img-radius{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+/* CSS */

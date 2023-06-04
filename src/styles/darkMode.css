@@ -1,0 +1,144 @@
+/* navbar */
+.dark-mode .navbar{
+  background: rgb(6,30,62);
+  background: linear-gradient(69deg, rgba(6,30,62,1) 15%, rgb(2 6 15) 96%);
+  width: 100%;
+ 
+}
+
+/* footer text */
+.dark-mode .text-center{
+  color: white;
+}
+
+/* link in aboutMe */
+.dark-mode .link{
+  color: #0072b1;
+}
+
+/* footer color line */
+.dark-mode .footer-m{
+  color: white;
+}
+
+/*  */
+.dark-mode .form-control{
+  background-color: whitesmoke!important;
+}
+
+/* contact me label */
+.dark-mode label{
+  color: white;
+}
+
+/* navbar color title */
+.dark-mode .nav-title{
+  color: white!important;
+}
+
+/* profile effects to image */
+.dark-mode #profile-section {
+  mix-blend-mode: multiply;
+}
+/* profile paragraph */
+.dark-mode .home-p {
+  color:white;
+}
+
+/* for all section title */
+.dark-mode .section-title{
+  color: white;
+}
+
+/* profile image effect */
+.dark-mode .img-fluid {
+  filter: brightness(100%) grayscale(10%) drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+  mask-image: linear-gradient(45deg, black, transparent);
+  mask-mode: alpha;
+  /* border-radius: 10%; */
+}
+
+.dark-mode .animated-job-title{
+  color:#3e73c2;
+}
+.light-mode-icon{
+  color: yellow;
+  cursor: pointer;
+}
+.dark-mode-icon{
+  color: gray;
+  cursor: pointer;
+}
+.dark-mode .name-content{
+  color: white;
+}
+.dark-mode .greeting{
+  color: #3e73c2;
+}
+
+.dark-mode .bullet{
+  background-color: #3e73c2;
+}
+
+/* skills */
+.dark-mode .bg-light{
+  background: #1c1b2d69!important;
+  border-radius: 10px;
+}
+.dark-mode .progress-bar-circle{
+  background-color: #3732a5;
+}
+.dark-mode .progress{
+  background-color: #1c1b2d!important;
+}
+
+.dark-mode .progress-bar-label{
+  color: white;
+}
+
+/* darkmode background */
+.dark-mode body{
+  background: rgb(6,30,62);
+  background: linear-gradient(69deg, rgba(6,30,62,1) 15%, rgb(2 6 15) 96%);
+}
+
+.dark-mode .about-p{
+ color: white;
+}
+
+.dark-mode .card{
+  background-color: #1c1b2d!important;
+}
+
+.dark-mode .card-text{
+  color:#49485a;
+}
+
+.dark-mode .skill-title{
+  color: white;
+}
+
+.dark-mode .services-icon{
+  color:#3732a5!important;
+}
+
+.dark-mode .description-page{
+  color: #4c4b56;
+}
+
+.dark-mode .progress-bar{
+  background-color: #3732a5!important;
+}
+
+.dark-mode .awards{
+color: #3e73c2;
+}
+.dark-mode .brand-name{
+  color: white!important;
+}
+
+
+/* portfolio navbar */
+.dark-mode .navbar-expand-lg .navbar-nav .nav-link {
+  color: white;
+}
