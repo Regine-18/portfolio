@@ -142,3 +142,7 @@ color: #3e73c2;
 .dark-mode .navbar-expand-lg .navbar-nav .nav-link {
   color: white;
 }
+.dark-mode .icon-container{
+  background-color: #1c1b2d;
+
+}

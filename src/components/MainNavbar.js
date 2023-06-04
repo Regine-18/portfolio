@@ -43,7 +43,7 @@ export default function MainNavbar() {
           <Navbar.Brand
             href="#home"
             className={`brand-name ${scrolled ? 'brand-name-scroll' : ''}`}
-            style={{ color: scrolled ? '#AF9E58' : '#0F584B' }}
+            style={{ color: scrolled ? 'white' : '#0F584B' }}
           >
             Regine
           </Navbar.Brand>

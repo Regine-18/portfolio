@@ -44,6 +44,13 @@
     padding: 1rem 1rem 2rem 0;
     margin: 2rem 0 0;
   }
+  .icon-container{
+    width: 60px;
+    height: 60px;
+  }
+  .icon{
+    padding: .5rem;
+  }
 
 }
 @media (min-width: 300px) and (max-width: 320px){
@@ -87,6 +94,11 @@
     position: absolute;
     padding: 1rem 1rem 2rem 0;
     margin: 4rem 0 0;
+  }
+  .icon-container{
+    margin-right: 1rem;
+    width: 70px;
+    height: 70px;
   }
 
 }
@@ -155,7 +167,10 @@
     display: flex;
     flex-direction: column;
   }
-  
+  .shape {
+    width: 100%;
+    height: 80%;
+  }
 }
 
 /* Medium devices (tablets) */
@@ -205,7 +220,10 @@
   .button-container button {
     font-size:.7rem;
   }
-  
+  .shape {
+    width: 100%;
+    height: 80%;
+  }
 }
 
 /* Large devices (desktops) */
@@ -282,5 +300,8 @@
   .award-text{
     font-size:1.8rem;
   }
+
+
+
 }
 

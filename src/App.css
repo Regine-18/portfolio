@@ -28,6 +28,31 @@
 }
 
 
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #f2f2f2;
+  margin-right: 20px;
+  margin-top: 1.5rem;
+}
+
+.icon-container:last-child {
+  margin-right: 0;
+}
+
+.icon {
+  width: 70%;
+  height: 70%;
+  padding: .7rem;
+}
+
+
+
 /* Profile begin */
 
 /* profileBackground */
@@ -95,7 +120,7 @@
   position: absolute;
   left: -21%;
   top: -21%;
-  background: url(../src/assets/image/regine-about-1.png);
+  background: url(../src/assets/image/IMG_20220911_191605.jpg);
   background-size: 100%;
   background-position: center center;
   display: flex;
@@ -127,7 +152,6 @@
 .brand-name{
   font-size: 2rem!important;
   font-weight: bold;
-  text-transform: lowercase;
   color: #093224;
 
 }
@@ -144,6 +168,7 @@
   -moz-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
+  margin-left: 1rem;
 }
 .facebook-icon {
   color: #3b5998;
@@ -261,6 +286,8 @@
 .about-content{
   padding-top: 3rem; /* Adjust this value to increase/decrease the left padding */
   padding-bottom: 3rem; /* Adjust this value to increase/decrease the right padding */
+  position: relative;
+  z-index: 1;
 }
 
 .bullet {
@@ -397,6 +424,9 @@
 .footer-border {
   height: 1px;
   background-color: #4BAF9D; /* Replace with your desired color */
+}
+.footer-m{
+  margin: 1rem 0;
 }
 
 /* to distance the icon from social media icons */
