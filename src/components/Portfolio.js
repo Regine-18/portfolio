@@ -10,7 +10,8 @@ import Photography from './Photography';
 function PortfolioNavbar() {
   const [selectedOption, setSelectedOption] = useState('Web Design');
 
-  const handleOptionClick = (option) => {
+  const handleOptionClick = (option, e) => {
+    e.stopPropagation();
     setSelectedOption(option);
   };
 
@@ -21,9 +22,9 @@ function PortfolioNavbar() {
       case 'Graphic Design':
         return <GraphicDesign />;
       case 'Branding':
-        return <Branding />; // Replace with your branding content
+        return <Branding />;
       case 'Photography':
-        return <Photography />; // Replace with your photography content
+        return <Photography />;
       default:
         return null;
     }
@@ -31,45 +32,44 @@ function PortfolioNavbar() {
 
   return (
     <>
-    <div className='container p-3' id='portfolio-section'>
-    <div className='portfolio-title '>
-      <h3 className='section-title'>Portfolio</h3>
-      <h1 className='description-page'>My Projects</h1>
-   </div>
-  </div>
-      <Navbar collapseOnSelect expand="lg" variant="light">
-        <Container fluid="" id='supported-information' className="text-center">
-          <Nav className="mx-auto" id="portfolio-navbar">
+      <div className='container p-3' id='portfolio-section'>
+        <div className='portfolio-title '>
+          <h3 className='section-title'>Portfolio</h3>
+          <h1 className='description-page'>My Projects</h1>
+        </div>
+      </div>
+      <Navbar collapseOnSelect expand='lg' variant='light'>
+        <Container fluid='' id='supported-information' className='text-center'>
+          <Nav className='mx-auto' id='portfolio-navbar'>
             <Nav.Link
               className={`portfolio-nav-items ${selectedOption === 'Web Design' ? 'active' : ''}`}
-              onClick={() => handleOptionClick('Web Design')}
+              onClick={(e) => handleOptionClick('Web Design', e)}
             >
               Web Design
             </Nav.Link>
             <Nav.Link
               className={`portfolio-nav-items ${selectedOption === 'Graphic Design' ? 'active' : ''}`}
-              onClick={() => handleOptionClick('Graphic Design')}
+              onClick={(e) => handleOptionClick('Graphic Design', e)}
             >
               Graphic Design
             </Nav.Link>
             <Nav.Link
               className={`portfolio-nav-items ${selectedOption === 'Branding' ? 'active' : ''}`}
-              onClick={() => handleOptionClick('Branding')}
+              onClick={(e) => handleOptionClick('Branding', e)}
             >
               Branding
             </Nav.Link>
             <Nav.Link
-            className={`portfolio-nav-items ${selectedOption === 'Photography' ? 'active' : ''}`}
-            onClick={() => handleOptionClick('Photography')}
-          >
-            Photography
-          </Nav.Link>
-          
+              className={`portfolio-nav-items ${selectedOption === 'Photography' ? 'active' : ''}`}
+              onClick={(e) => handleOptionClick('Photography', e)}
+            >
+              Photography
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
 
-      <div className="carousel-wrapper">{renderContent()}</div>
+      <div className='carousel-wrapper'>{renderContent()}</div>
     </>
   );
 }
