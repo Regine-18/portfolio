@@ -52,7 +52,7 @@ const Profile = () => {
                   </ScrollLink>
                   
                   <button className='btn btn-secondary' onClick={handleDownload}>
-                    Download CV
+                    Get Workfolio
                   </button>
               
               </div>

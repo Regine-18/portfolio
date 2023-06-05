@@ -153,7 +153,6 @@
   font-size: 2rem!important;
   font-weight: bold;
   color: #093224;
-
 }
 /* nav-items */
 .nav-title{
@@ -210,6 +209,7 @@
 /* ABOUT ME */
 .link{
   cursor: pointer;
+  color: #0F584B;
 }
 
 .nav-title{
@@ -320,7 +320,6 @@
 /* contactBackground */
 #contact-section{
   background-color: rgba(128, 13, 13, 0.04);
-  margin: 5rem 0 0 0;
 }
 
 /* SERVICES */
@@ -362,10 +361,36 @@
 
 /* Rest of your CSS code */
 
+.navbar-toggle {
+  background-color:white; /* Default background color */
+  border-color: none;
+}
+
+.navbar-toggle .navbar-toggle-icon {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #0F584B; /* Toggle icon color */
+  margin-bottom: 4px;
+}
+
+.navbar-toggle-scroll {
+  background-color: #fff; /* Background color when scrolled */
+}
+
+.navbar-toggle-scroll .navbar-toggle-icon {
+  background-color: white; /* Toggle icon color when scrolled */
+}
+
+.navbar-toggle:focus {
+  outline: none; /* Remove outline when clicked */
+  box-shadow: 0 0 0 1px white!important;
+}
+
 
 /* PORTFOLIO */
 .portfolio-title{
-  float: right;
+  /* float: right; */
   margin-bottom: 1rem;
 }
 
@@ -373,13 +398,13 @@
   font-size: 1.3rem!important;
   /* margin: 2rem 0 0 0; */
   transition: background-color 0.3s;
-  padding: 0 2rem 0 2rem;
  
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 1rem;
   color: black;
+  padding: 1rem;
 }
+
 
 
 .portfolio-nav-items:hover {
@@ -388,6 +413,8 @@
   color: #FFFFFF!important;
 
 }
+
+
 
 
 .content-container {

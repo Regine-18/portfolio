@@ -33,7 +33,7 @@ const Services = () => {
     <>
   
       <div className='container-fluid' id='services-container' ref={servicesRef}>
-        <div className='container p-5'>
+        <div className='container p-3'>
           <h3 className='section-title'>Services</h3>
           <h1 className='description-page'>What Can I Do</h1>
           <div className='row mt-4' id='row'>
@@ -71,7 +71,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className='row mt-4' id='row'>
+          <div className='row' id='row'>
             <div className='col-sm mt-3'>
             <div className={`card ${isInView ? 'animate' : ''}`}>
                 <div className='card-body'>

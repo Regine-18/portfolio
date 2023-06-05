@@ -16,3 +16,13 @@
   }
 }
 /* END */
+
+/* SKILLS ANIMATION */
+.icon-container.animate{
+transition: transform 0.3s  ease-in-out;
+}
+
+.icon-container:hover {
+transform: scale(1.2);
+}
+/* END */

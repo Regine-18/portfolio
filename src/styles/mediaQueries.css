@@ -51,7 +51,18 @@
   .icon{
     padding: .5rem;
   }
+  .img-photography{
+    width: 100%;
+  }
 
+ .brand-name{
+  font-size: 1.5rem!important;
+  font-weight: 500;
+ }
+ .custom-icon {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 }
 @media (min-width: 300px) and (max-width: 320px){
   .img-fluid{
@@ -100,7 +111,19 @@
     width: 70px;
     height: 70px;
   }
+  .img-photography{
+    width: 100%
+  }
 
+
+   .brand-name{
+    font-size: 1.5rem!important;
+    font-weight: 500;
+   }
+   .custom-icon {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 }
 
 
@@ -157,6 +180,18 @@
   position: absolute;
   margin:1rem 0 0;
 }
+.img-photography{
+  width: 100%
+}
+
+ .brand-name{
+  font-size: 1.5rem!important;
+  font-weight: 500;
+ }
+ .custom-icon {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 }
 
 /* Small devices (landscape phones) */
@@ -171,6 +206,18 @@
     width: 100%;
     height: 80%;
   }
+  .img-photography{
+    width: 100%
+  }
+
+   .brand-name{
+    font-size: 1.5rem!important;
+    font-weight: 500;
+   }
+   .custom-icon {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 }
 
 /* Medium devices (tablets) */
@@ -224,6 +271,17 @@
     width: 100%;
     height: 80%;
   }
+  .img-photography{
+    width: 100%;
+    height:60vh;
+  }
+
+  
+    .custom-icon {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+  
 }
 
 /* Large devices (desktops) */
@@ -257,15 +315,17 @@
   .card-title{
     font-size: 1.8rem;
   }
-/* portfolio navbar */
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 1rem;
 
-}
 /* graphic design centering the image */
 #row{
   display: flex;
   justify-content: center;
+}
+.img-photography{
+  width: 100%;
+}
+.dark-mode .navbar {
+  width: 100%;
 }
 
 
@@ -300,8 +360,10 @@
   .award-text{
     font-size:1.8rem;
   }
+  .img-photography{
+    width: 100%;
+  }
 
-
-
+ 
 }
 
