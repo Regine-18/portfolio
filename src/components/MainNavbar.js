@@ -69,15 +69,15 @@ export default function MainNavbar() {
             Regine
           </Navbar.Brand>
           <Navbar.Toggle
-          id="navbar-toggle"
-          aria-controls="responsive-navbar-nav"
-          className={`navbar-toggle ${scrolled ? 'navbar-toggle-scroll' : ''}`}
-          style={{ backgroundColor: scrolled ? '' : '' }}
-        >
-          <span className="navbar-toggle-icon"></span>
-          <span className="navbar-toggle-icon"></span>
-          <span className="navbar-toggle-icon"></span>
-        </Navbar.Toggle>
+            id="navbar-toggle"
+            aria-controls="responsive-navbar-nav"
+            className={`navbar-toggle ${scrolled ? 'navbar-toggle-scroll' : ''}`}
+            style={{ backgroundColor: scrolled ? '' : '' }}
+          >
+            <span className="navbar-toggle-icon"></span>
+            <span className="navbar-toggle-icon"></span>
+            <span className="navbar-toggle-icon"></span>
+          </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
               <Nav.Link
