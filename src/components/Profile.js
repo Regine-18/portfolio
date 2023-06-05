@@ -10,12 +10,14 @@ const Profile = () => {
 
   const imageHome= (require('../assets/image/regine1.png'));
 
-  const handleDownload = () => {
+  const handleDownload = (e) => {
+    e.stopPropagation();
     const link = document.createElement('a');
     link.href = resumePDF;
     link.download = 'Galanaga-Regine-A-Resume.pdf';
     link.click();
   };
+  
 
   return (
     <>
