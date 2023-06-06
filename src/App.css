@@ -402,7 +402,7 @@
 }
 .navbar-expand-lg .navbar-nav .nav-link {
   color: black;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 
@@ -548,6 +548,7 @@ label {
   /* Add your desired styles for the active navigation link here */
   /* For example: */
   font-weight: bold;
+  
 }
 
 /* CSS for the carousel wrapper */

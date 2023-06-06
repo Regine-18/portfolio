@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 
 function Branding() {
-  const image1stBrand = require('../assets/image/portfolioPhotos/brandingDesign/1stbranding.jpg');
+
   const image2ndBrand = require('../assets/image/portfolioPhotos/brandingDesign/2ndbranding.jpg');
   const image3rdBrand = require('../assets/image/portfolioPhotos/brandingDesign/3rdbranding.jpg');
   const image4thBrand = require('../assets/image/portfolioPhotos/brandingDesign/4branding.jpg');
@@ -17,7 +17,7 @@ function Branding() {
         <div className="row" id='row'>
           <div className="col-sm mt-4">
             <div className="img-overlay">
-              <img src={image1stBrand} alt="billing" width={width} height={height} />
+            <img src={image6thBrand} className="img-design" alt="billing" width={width} height={height} />
             </div>
           </div>
           <div className="col-sm mt-4">

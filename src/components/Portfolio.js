@@ -40,7 +40,7 @@ function PortfolioNavbar() {
       </div>
       <Navbar collapseOnSelect expand='lg' variant='light'>
         <Container fluid='' id='supported-information' className='text-center'>
-          <Nav className='mx-auto' id='portfolio-navbar'>
+          <Nav className='mx-auto ' id='portfolio-navbar'>
             <Nav.Link
               className={`portfolio-nav-items ${selectedOption === 'Web Design' ? 'active' : ''}`}
               onClick={(e) => handleOptionClick('Web Design', e)}
