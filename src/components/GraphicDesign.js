@@ -16,7 +16,7 @@ function GraphicDesign() {
               <div className="col-lg d-flex align-items-center">
                 <img src={imageIndividual} className='img-radius' alt='billing' width={width} height={height}/>
               </div>
-                <div className='col-lg'>
+                <div className='col-lg mt-3'>
                   <img src={imageWedding} className='img-radius' alt='billing' width={width} height={width}/>
                 </div>
             </div>
