@@ -141,7 +141,7 @@
   -moz-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   display: flex;
   gap: 0.3rem;
 }

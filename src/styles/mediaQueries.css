@@ -115,7 +115,9 @@
     width: 100%
   }
 
-
+  .social-icons{
+    margin-left: 1rem;
+  }
    .brand-name{
     font-size: 1.5rem!important;
     font-weight: 500;
@@ -199,9 +201,12 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-  color: rgba(0,0,0,.9);
-  padding: .8rem;
+.social-icons{
+  margin-left: 1rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: black;
+  padding: 1rem;
 }
 }
 
@@ -307,6 +312,9 @@
 .col-sm{
   justify-content: center;
   display: flex;
+}
+.social-icons{
+  margin-left: 1rem;
 }
 }
 
