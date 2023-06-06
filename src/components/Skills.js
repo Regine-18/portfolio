@@ -5,10 +5,10 @@ const Skills = () => {
   const getIconSize = () => {
     if (window.innerWidth <= 768) {
       return {
-        htmlSize: 30,
-        cssSize: 20,
-        jsSize: 25,
-        reactSize: 35,
+        htmlSize: 50,
+        cssSize: 50,
+        jsSize: 50,
+        reactSize: 50,
       };
     } else {
       return {
