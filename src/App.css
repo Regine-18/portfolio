@@ -329,6 +329,7 @@
 .navbar-toggle {
   background-color:white; /* Default background color */
   border-color: none;
+  border: none!important;
 }
 
 .navbar-toggle .navbar-toggle-icon {
@@ -337,6 +338,7 @@
   height: 2px;
   background-color: #0F584B; /* Toggle icon color */
   margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 .navbar-toggle-scroll {
