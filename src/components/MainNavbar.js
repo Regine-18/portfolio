@@ -3,7 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link as ScrollLink } from 'react-scroll';
-import { LightMode, DarkMode, Facebook, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
+import { LightMode, DarkMode,} from '@mui/icons-material';
+import SocialMedia from './SocialMedia';
 
 export default function MainNavbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -154,10 +155,7 @@ export default function MainNavbar() {
               </Nav.Link>
             </Nav>
             <div className="social-icons">
-              <Facebook className={`facebook-icon ${scrolled ? 'scrolled' : ''}`} />
-              <Instagram className={`instagram-icon ${scrolled ? 'scrolled' : ''}`} />
-              <Twitter className={`twitter-icon ${scrolled ? 'scrolled' : ''}`} />
-              <LinkedIn className={`linkedIn-icon ${scrolled ? 'scrolled' : ''}`} />
+            <SocialMedia />
             </div>
             <div className="custom-icon">
               {darkMode ? (
