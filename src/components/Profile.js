@@ -21,7 +21,7 @@ const Profile = () => {
 
   return (
     <>
-      <div className='container-fluid position-relative' id=''>
+      <div className='container-fluid position-relative' id='profile'>
         <div className='curve-line'></div>
         <div className='overlay'></div>
         <div className='container mt-5'>

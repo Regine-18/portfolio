@@ -81,7 +81,12 @@ export default function MainNavbar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
               <Nav.Link
-                className={`nav-title ${scrolled ? 'navlink-scroll' : 'navlink'}`}
+              as={ScrollLink}
+              to="profile"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className={`nav-title ${scrolled ? 'navlink-scroll' : 'navlink'}`}
                 style={{ color: scrolled ? 'white' : '#093224' }}
                 onClick={handleNavItemClick}
               >
