@@ -1,31 +1,5 @@
 
-.social-icons{
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-.facebook-icon {
-  color: #3b5998;
-}
 
-.instagram-icon{
-  color: 	#FCAF45;
-}
-
-.twitter-icon{
-  color: #00acee;
-}
-
-.linkedIn-icon{
-  color: #0072b1 ;
-}
-/* endOriginalIconColors */
-
-/* iconNewColoredWhenScolled */
-.facebook-icon.scrolled, .instagram-icon.scrolled, .twitter-icon.scrolled, .linkedIn-icon.scrolled {
-  color: #ffffff;
-}
 
 
 
@@ -168,6 +142,8 @@
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
   margin-left: 1rem;
+  display: flex;
+  gap: 0.3rem;
 }
 .facebook-icon {
   color: #3b5998;
@@ -187,21 +163,10 @@
 /* endOriginalIconColors */
 
 /* iconNewColoredWhenScolled */
-.facebook-icon.scrolled {
+.facebook-icon.scrolled, .instagram-icon.scrolled, .twitter-icon.scrolled, .linkedIn-icon.scrolled {
   color: #ffffff;
 }
-.instagram-icon.scrolled {
-  color: 	#ffffff;
-}
-
-.twitter-icon.scrolled {
-  color: #ffffff;
-}
-
-.linkedIn-icon.scrolled {
-  color: #ffffff;
-}
-/*End */
+/* end */
 
 
 
