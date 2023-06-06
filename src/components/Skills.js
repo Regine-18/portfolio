@@ -31,24 +31,36 @@ const Skills = () => {
       <div className="row p-2">
         <div className="col-lg-6 d-flex justify-content-center">
           <div className="icon-container">
-            <SiHtml5 size={htmlSize} color="orange" className="icon" onClick={handleIconClick} />
+            <a href="https://www.w3.org/html/" target="_blank" rel="noopener noreferrer">
+              <SiHtml5 size={htmlSize} color="orange" className="icon" onClick={handleIconClick} />
+            </a>
           </div>
           <div className="icon-container">
-            <SiCss3 size={cssSize} color="blue" className="icon" onClick={handleIconClick} />
+            <a href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener noreferrer">
+              <SiCss3 size={cssSize} color="blue" className="icon" onClick={handleIconClick} />
+            </a>
           </div>
           <div className="icon-container">
-            <SiJavascript size={jsSize} color="#F0DB4F" className="icon" onClick={handleIconClick} />
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+              <SiJavascript size={jsSize} color="#F0DB4F" className="icon" onClick={handleIconClick} />
+            </a>
           </div>
         </div>
         <div className="col-lg-6 d-flex justify-content-center">
           <div className="icon-container">
-            <SiReact size={reactSize} color="#61DBF5" className="icon" onClick={handleIconClick} />
+            <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+              <SiReact size={reactSize} color="#61DBF5" className="icon" onClick={handleIconClick} />
+            </a>
           </div>
           <div className="icon-container">
-            <SiBootstrap size={reactSize} color="blue" className="icon" onClick={handleIconClick} />
+            <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+              <SiBootstrap size={reactSize} color="blue" className="icon" onClick={handleIconClick} />
+            </a>
           </div>
           <div className="icon-container">
-            <SiAdobe size={reactSize} color="#FF0000" className="icon" onClick={handleIconClick} />
+            <a href="https://www.adobe.com/" target="_blank" rel="noopener noreferrer">
+              <SiAdobe size={reactSize} color="#FF0000" className="icon" onClick={handleIconClick} />
+            </a>
           </div>
         </div>
       </div>
