@@ -303,6 +303,11 @@
     color: black;
     padding: 1rem;
 }
+/* center image in branding */
+.col-sm{
+  justify-content: center;
+  display: flex;
+}
 }
 
 /* Large devices (desktops) */

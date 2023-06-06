@@ -13,7 +13,7 @@ function Branding() {
 
   return (
     <>
-      <div className="container p-2">
+      <div className="container p-2 ">
         <div className="row" id='row'>
           <div className="col-sm mt-4">
             <div className="img-overlay">
