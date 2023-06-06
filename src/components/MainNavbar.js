@@ -99,6 +99,20 @@ export default function MainNavbar() {
               >
                 About
               </Nav.Link>
+              
+                  
+              <Nav.Link
+                as={ScrollLink}
+                to="services-container"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={`nav-title ${scrolled ? 'navlink-scroll' : 'navlink'}`}
+                style={{ color: scrolled ? 'white' : '#093224' }}
+                onClick={handleNavItemClick}
+              >
+                Services
+              </Nav.Link>
               <Nav.Link
                 as={ScrollLink}
                 to="portfolio-section"
