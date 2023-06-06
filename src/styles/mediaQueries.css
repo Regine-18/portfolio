@@ -63,6 +63,12 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.position{
+  flex-direction: column;
+}
+.social-icons{
+  margin-bottom: 1rem;
+}
 }
 @media (min-width: 300px) and (max-width: 320px){
   .img-fluid{

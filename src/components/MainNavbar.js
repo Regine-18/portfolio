@@ -9,6 +9,7 @@ export default function MainNavbar() {
   const [scrolled, setScrolled] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const navbarRef = useRef(null);
+  const navbarToggleRef = useRef(null);
 
   const handleScroll = () => {
     if (window.scrollY >= 90) {
@@ -32,8 +33,13 @@ export default function MainNavbar() {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-        // Clicked outside the navbar
+      if (
+        navbarToggleRef.current &&
+        !navbarToggleRef.current.getAttribute('aria-expanded') === 'true' &&
+        navbarRef.current &&
+        !navbarRef.current.contains(event.target)
+      ) {
+        // Clicked outside the navbar and the Navbar toggle is not expanded
         document.getElementById('navbar-toggle').click(); // Close the navbar toggle
       }
     };
@@ -73,6 +79,7 @@ export default function MainNavbar() {
             aria-controls="responsive-navbar-nav"
             className={`navbar-toggle ${scrolled ? 'navbar-toggle-scroll' : ''}`}
             style={{ backgroundColor: scrolled ? '' : '' }}
+            ref={navbarToggleRef}
           >
             <span className="navbar-toggle-icon"></span>
             <span className="navbar-toggle-icon"></span>
@@ -81,12 +88,12 @@ export default function MainNavbar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
               <Nav.Link
-              as={ScrollLink}
-              to="profile"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={`nav-title ${scrolled ? 'navlink-scroll' : 'navlink'}`}
+                as={ScrollLink}
+                to="profile"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={`nav-title ${scrolled ? 'navlink-scroll' : 'navlink'}`}
                 style={{ color: scrolled ? 'white' : '#093224' }}
                 onClick={handleNavItemClick}
               >
@@ -104,8 +111,6 @@ export default function MainNavbar() {
               >
                 About
               </Nav.Link>
-              
-                  
               <Nav.Link
                 as={ScrollLink}
                 to="services-container"
