@@ -8,8 +8,8 @@ import { LightMode, DarkMode, Facebook, Instagram, LinkedIn, Twitter } from '@mu
 export default function MainNavbar() {
   const [scrolled, setScrolled] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [expanded, setExpanded] = useState(false); // Track the expanded state of the navbar
   const navbarRef = useRef(null);
-  const navbarToggleRef = useRef(null);
 
   const handleScroll = () => {
     if (window.scrollY >= 90) {
@@ -29,18 +29,14 @@ export default function MainNavbar() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.documentElement.classList.toggle('dark-mode'); // Add/remove the 'dark-mode' class to the HTML element
+    setExpanded(false); // Close the navbar toggle when dark mode is toggled
   };
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (
-        navbarToggleRef.current &&
-        !navbarToggleRef.current.getAttribute('aria-expanded') === 'true' &&
-        navbarRef.current &&
-        !navbarRef.current.contains(event.target)
-      ) {
-        // Clicked outside the navbar and the Navbar toggle is not expanded
-        document.getElementById('navbar-toggle').click(); // Close the navbar toggle
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        // Clicked outside the navbar
+        setExpanded(false); // Close the navbar toggle
       }
     };
 
@@ -52,7 +48,7 @@ export default function MainNavbar() {
   }, []);
 
   const handleNavItemClick = () => {
-    document.getElementById('navbar-toggle').click(); // Close the navbar toggle
+    setExpanded(false); // Close the navbar toggle when a nav item is clicked
   };
 
   return (
@@ -65,6 +61,7 @@ export default function MainNavbar() {
         className={scrolled ? 'scrolled' : ''}
         style={{ backgroundColor: scrolled ? '#0F584B' : 'white' }}
         ref={navbarRef}
+        expanded={expanded} // Pass the expanded state to the Navbar component
       >
         <Container className="d-flex justify-content-space-between align-items-center">
           <Navbar.Brand
@@ -75,16 +72,15 @@ export default function MainNavbar() {
             Regine
           </Navbar.Brand>
           <Navbar.Toggle
-            id="navbar-toggle"
-            aria-controls="responsive-navbar-nav"
-            className={`navbar-toggle ${scrolled ? 'navbar-toggle-scroll' : ''}`}
-            style={{ backgroundColor: scrolled ? '' : '' }}
-            ref={navbarToggleRef}
-          >
-            <span className="navbar-toggle-icon"></span>
-            <span className="navbar-toggle-icon"></span>
-            <span className="navbar-toggle-icon"></span>
-          </Navbar.Toggle>
+          id="navbar-toggle"
+          aria-controls="responsive-navbar-nav"
+          className={`navbar-toggle ${scrolled ? 'navbar-toggle-scroll' : ''}`}
+          onClick={() => setExpanded(!expanded)} // Toggle the expanded state on button click
+        >
+          <span className="navbar-toggle-icon"></span>
+          <span className="navbar-toggle-icon"></span>
+          <span className="navbar-toggle-icon"></span>
+        </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
               <Nav.Link
@@ -111,6 +107,7 @@ export default function MainNavbar() {
               >
                 About
               </Nav.Link>
+
               <Nav.Link
                 as={ScrollLink}
                 to="services-container"
