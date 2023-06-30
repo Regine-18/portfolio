@@ -44,7 +44,7 @@ const Profile = () => {
                   />
                 </div>
                 <p className='home-p'>
-                  Versatile Professional for almost 5 years. Committed to quality, innovation, and client satisfaction.
+                  Versatile Professional,fresh graduate. Committed to quality, innovation, and client satisfaction.
                   Ensures the delivery of impactful digital experiences that leave a lasting impression.
                 </p>
              
